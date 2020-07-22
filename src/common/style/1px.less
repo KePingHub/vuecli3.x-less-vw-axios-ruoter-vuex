@@ -1,0 +1,12 @@
+@import "mixin/setOnepx.less";
+@import "variable/color.less";
+
+each(@borderColors, {
+  .new1pxBorder(e("bd-1px-@{key}"), @value);
+});
+
+.new1pxBorder(bd-1px-listItem-dashed, @list-item-bdc, dashed);
+
+.new1pxBorderBdr(e("normal-bd-1px-search"), @home-search-bdc, 10px, @main-bgc);
+.new1pxBorderBdr(e("big-bd-1px-search"), @home-search-bdc, 16px, @main-bgc);
+.new1pxBorderBdr(e("bd-1px-mineListItem"), @list-item-bdc-sec, 10px, @list-item-gray-bgc);
